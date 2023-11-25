@@ -110,12 +110,14 @@ main #footer_content .mark_box {
   width: 2rem;
   height: 2rem;
   background-color: red;
+  border-radius: 0.3rem;
 }
 main #footer_content .mark_box_white {
   display: inline-block;
   width: 2rem;
   height: 2rem;
   background-color: rgb(229, 227, 227);
+  border-radius: 0.3rem;
 }
 main #footer_content p {
   padding: 0.5rem;
