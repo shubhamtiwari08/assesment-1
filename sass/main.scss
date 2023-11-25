@@ -1,0 +1,134 @@
+@import "var";
+@import "mixin";
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+ 
+
+body{
+    @include flexprop(row,center,center);
+    background-color:$bg-color ;
+    height: 100vh;
+
+    p{
+        font-size: 1.5rem;
+    }
+}
+
+main{
+    @include flexprop(column,space-between,center);
+    background-color: $container-bg-color;
+    padding: 1rem;
+    width: 44rem;
+    height: 49rem;
+    border-radius: 2rem;
+    padding: 2rem;
+    margin: 1rem;
+
+    #btns{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    button{
+        background-color: transparent;
+        border: none;
+
+        i{
+            font-size: 2.2rem;
+        }
+    }
+
+    #marks_container{
+        @include flexprop(column,center,center);
+        height: 20rem;
+        width: 20rem;
+        position: relative;
+
+        #eligibility{
+            color: red;
+        }
+
+        h3{
+            font-size: 3rem;
+        }
+        svg{
+            position: relative;
+            width: 25rem;
+            height: 18rem;
+            
+            circle{
+                    width: 25rem;
+                    height: 25rem;
+                    fill: none;
+                    stroke-width: 20;
+                    stroke: black;
+                    transform: translate(4rem,2rem);
+                    stroke-dasharray: 450;
+                    stroke-dashoffset: 450;
+                    stroke-linecap: round;
+            }
+
+            circle:nth-child(1){
+                stroke-dashoffset: 0;
+                stroke: rgb(239, 238, 238);
+            }
+
+            circle:nth-child(2){
+                stroke-dashoffset: calc(450 - (450*0)/100);
+                stroke: rgb(224, 16, 16);
+            }
+
+        }
+
+        #number{
+            position: absolute;
+            font-size: 2.5rem;
+            top: 8.5rem;
+            right: 8rem;
+        }
+
+
+    }
+
+    #footer_content{
+        @include flexprop(row,space-between,center);
+        width: 100%;
+
+        input{
+          width: 8rem;
+          border: none;
+          background-color: rgb(230, 230, 230);
+          padding: 1rem;
+          border-radius: 1rem;
+        }
+
+        .mark_box{
+          @include mark_box(red);
+        }
+
+        .mark_box_white{
+            @include mark_box(rgb(229, 227, 227));
+          }
+
+        p{
+            padding: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+    }
+
+
+}
+

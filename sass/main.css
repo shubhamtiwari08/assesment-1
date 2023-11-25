@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: grey;
+  height: 100vh;
+}
+body p {
+  font-size: 1.5rem;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  padding: 1rem;
+  width: 44rem;
+  height: 49rem;
+  border-radius: 2rem;
+  padding: 2rem;
+  margin: 1rem;
+}
+main #btns {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main button {
+  background-color: transparent;
+  border: none;
+}
+main button i {
+  font-size: 2.2rem;
+}
+main #marks_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 20rem;
+  width: 20rem;
+  position: relative;
+}
+main #marks_container #eligibility {
+  color: red;
+}
+main #marks_container h3 {
+  font-size: 3rem;
+}
+main #marks_container svg {
+  position: relative;
+  width: 25rem;
+  height: 18rem;
+}
+main #marks_container svg circle {
+  width: 25rem;
+  height: 25rem;
+  fill: none;
+  stroke-width: 20;
+  stroke: black;
+  transform: translate(4rem, 2rem);
+  stroke-dasharray: 450;
+  stroke-dashoffset: 450;
+  stroke-linecap: round;
+}
+main #marks_container svg circle:nth-child(1) {
+  stroke-dashoffset: 0;
+  stroke: rgb(239, 238, 238);
+}
+main #marks_container svg circle:nth-child(2) {
+  stroke-dashoffset: 450;
+  stroke: rgb(224, 16, 16);
+}
+main #marks_container #number {
+  position: absolute;
+  font-size: 2.5rem;
+  top: 8.5rem;
+  right: 8rem;
+}
+main #footer_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
+main #footer_content input {
+  width: 8rem;
+  border: none;
+  background-color: rgb(230, 230, 230);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+main #footer_content .mark_box {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background-color: red;
+}
+main #footer_content .mark_box_white {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background-color: rgb(229, 227, 227);
+}
+main #footer_content p {
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}/*# sourceMappingURL=main.css.map */

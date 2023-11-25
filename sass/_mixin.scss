@@ -1,0 +1,20 @@
+@mixin flexprop($direction,$justify,$align){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+
+@mixin marks($color){
+    width: 20rem;
+    height: 20rem;
+    border: 3rem solid $color;
+    border-radius: 50%;
+}
+
+@mixin mark_box($color){
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    background-color: $color;
+}
