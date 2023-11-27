@@ -19,11 +19,18 @@ inputEl.addEventListener("input",()=>{
         marksEl.style.strokeDashoffset = (450 - (450*inputEl.value)/100);
         elibilityEl.innerHTML = `<p><i class="fas fa-times"></i> you are not eligible</p>`
         elibilityEl.style.color = "red"
-    }else{
+    }else if(inputEl.value === ""){
         number.textContent =  "100%";
         marksEl.style.strokeDashoffset = (450 - (450*100)/100);
-
-
+        marksEl.style.strokeDashoffset = (450 - (450*inputEl.value)/100);
+        elibilityEl.innerHTML = `<p><i class="fas fa-check"></i> you are not eligible</p>`
+        elibilityEl.style.color = "red"
+    }else {
+        number.textContent =  "100%";
+        marksEl.style.strokeDashoffset = (450 - (450*100)/100);
+        marksEl.style.strokeDashoffset = (450 - (450*100)/100);
+        elibilityEl.innerHTML = `<p><i class="fas fa-check"></i> you are eligible</p>`
+        elibilityEl.style.color = "green"
     }
 })
 
